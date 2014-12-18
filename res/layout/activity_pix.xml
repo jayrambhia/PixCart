@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fenchtose.pixcart.PixActivity" >
+    
+    <com.fenchtose.pixcart.PreviewSurfaceView
+        android:id="@+id/preview_surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+    </com.fenchtose.pixcart.PreviewSurfaceView>
+    
+    <com.fenchtose.pixcart.OverlayView
+        android:id="@+id/overlay_surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffed4036"
+        android:layout_alignParentBottom="true">
+    </com.fenchtose.pixcart.OverlayView>
+    
+    <ImageView 
+        android:id="@+id/click_button"
+        android:layout_above="@id/overlay_surface"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shutter"
+        android:layout_marginBottom="-24dp"/>
+
+</RelativeLayout>
